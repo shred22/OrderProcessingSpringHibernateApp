@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<customerOrder>
+	<customer>
+		<name>Shreyas Dange</name>
+		<productId>1</productId>
+		<contactNo>7845968774</contactNo>
+		<emailId>sd@gmal.com</emailId>
+		<address>
+			<type>Home</type>
+			<street>Lokhandwala Street</street>
+			<city>Pune</city>
+			<state>MP</state>
+			<pincode>785147</pincode>
+		</address>
+	</customer>
+	<orderdate>17/02/2018</orderdate>
+	<expedite>Y</expedite>
+</customerOrder>
+

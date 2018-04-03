@@ -1,0 +1,604 @@
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Customer [READ]: select customer0_.custId as custId1_2_0_, customer0_.contactNo as contactNo2_2_0_, customer0_.emailId as emailId3_2_0_, customer0_.name as name4_2_0_ from Customer customer0_ where customer0_.custId=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6bff19ff]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : contactNo
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : emailId
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {custId1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Customer [UPGRADE]: select customer0_.custId as custId1_2_0_, customer0_.contactNo as contactNo2_2_0_, customer0_.emailId as emailId3_2_0_, customer0_.name as name4_2_0_ from Customer customer0_ where customer0_.custId=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4e558728]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : contactNo
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : emailId
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {custId1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Customer [UPGRADE_NOWAIT]: select customer0_.custId as custId1_2_0_, customer0_.contactNo as contactNo2_2_0_, customer0_.emailId as emailId3_2_0_, customer0_.name as name4_2_0_ from Customer customer0_ where customer0_.custId=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4d6f197e]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : contactNo
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : emailId
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {custId1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Customer [UPGRADE_SKIPLOCKED]: select customer0_.custId as custId1_2_0_, customer0_.contactNo as contactNo2_2_0_, customer0_.emailId as emailId3_2_0_, customer0_.name as name4_2_0_ from Customer customer0_ where customer0_.custId=? for update skip locked
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@64e1dd11]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : contactNo
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : emailId
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {custId1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Customer [FORCE]: select customer0_.custId as custId1_2_0_, customer0_.contactNo as contactNo2_2_0_, customer0_.emailId as emailId3_2_0_, customer0_.name as name4_2_0_ from Customer customer0_ where customer0_.custId=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6999cd39]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : contactNo
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : emailId
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {custId1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Customer [PESSIMISTIC_READ]: select customer0_.custId as custId1_2_0_, customer0_.contactNo as contactNo2_2_0_, customer0_.emailId as emailId3_2_0_, customer0_.name as name4_2_0_ from Customer customer0_ where customer0_.custId=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7ed9ae94]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : contactNo
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : emailId
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {custId1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Customer [PESSIMISTIC_WRITE]: select customer0_.custId as custId1_2_0_, customer0_.contactNo as contactNo2_2_0_, customer0_.emailId as emailId3_2_0_, customer0_.name as name4_2_0_ from Customer customer0_ where customer0_.custId=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@41477a6d]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : contactNo
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : emailId
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {custId1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Customer [PESSIMISTIC_FORCE_INCREMENT]: select customer0_.custId as custId1_2_0_, customer0_.contactNo as contactNo2_2_0_, customer0_.emailId as emailId3_2_0_, customer0_.name as name4_2_0_ from Customer customer0_ where customer0_.custId=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3122b117]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : contactNo
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : emailId
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {custId1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Customer [OPTIMISTIC]: select customer0_.custId as custId1_2_0_, customer0_.contactNo as contactNo2_2_0_, customer0_.emailId as emailId3_2_0_, customer0_.name as name4_2_0_ from Customer customer0_ where customer0_.custId=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@29a23c3d]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : contactNo
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : emailId
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {custId1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Customer [OPTIMISTIC_FORCE_INCREMENT]: select customer0_.custId as custId1_2_0_, customer0_.contactNo as contactNo2_2_0_, customer0_.emailId as emailId3_2_0_, customer0_.name as name4_2_0_ from Customer customer0_ where customer0_.custId=?
+DEBUG main org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.orderProcessing.service.Customer: select customer0_.custId as custId1_2_0_, customer0_.contactNo as contactNo2_2_0_, customer0_.emailId as emailId3_2_0_, customer0_.name as name4_2_0_ from Customer customer0_ where customer0_.custId=?
+DEBUG main org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.orderProcessing.service.Customer: select customer0_.custId as custId1_2_0_, customer0_.contactNo as contactNo2_2_0_, customer0_.emailId as emailId3_2_0_, customer0_.name as name4_2_0_ from Customer customer0_ where customer0_.custId=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@378bd86d]
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2189e7a7]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : contactNo
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : emailId
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(collection=com.orderProcessing.service.Address.customer)
+    - Returns
+       - CollectionReturnImpl(collection=com.orderProcessing.service.Address.customer, querySpaceUid=<gen:0>, path=[com.orderProcessing.service.Address.customer])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:1>, path=[com.orderProcessing.service.Address.customer].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.orderProcessing.service.Address.customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {Address_addressId1_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - custId1_2_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.orderProcessing.service.Customer)
+                - SQL table alias mapping - customer1_
+                - alias suffix - 1_
+                - suffixed key columns - {custId1_2_1_}
+
+DEBUG main org.hibernate.loader.collection.plan.CollectionLoader - Static select for collection com.orderProcessing.service.Address.customer: select customer0_.Address_addressId as Address_addressId1_0_0_, customer0_.customer_custId as customer_custId2_1_0_, customer1_.custId as custId1_2_1_, customer1_.contactNo as contactNo2_2_1_, customer1_.emailId as emailId3_2_1_, customer1_.name as name4_2_1_ from Address_Customer customer0_ inner join Customer customer1_ on customer0_.customer_custId=customer1_.custId where customer0_.Address_addressId=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1ee29c84]
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7c8326a4]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : orderDate
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@69ce2f62]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer.address
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer.contactNo
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer.emailId
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer.name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer.order
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : customer.order
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(collection=com.orderProcessing.service.Product.order)
+    - Returns
+       - CollectionReturnImpl(collection=com.orderProcessing.service.Product.order, querySpaceUid=<gen:0>, path=[com.orderProcessing.service.Product.order])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.orderProcessing.service.CustomerOrder, querySpaceUid=<gen:1>, path=[com.orderProcessing.service.Product.order].<elements>)
+             - EntityAttributeFetchImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:2>, path=[com.orderProcessing.service.Product.order].<elements>.customer)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.orderProcessing.service.Product.order)
+          - SQL table alias mapping - order0_
+          - alias suffix - 0_
+          - suffixed key columns - {productId2_6_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_5_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.orderProcessing.service.CustomerOrder)
+                - SQL table alias mapping - customeror1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_5_1_}
+                - JOIN (JoinDefinedByMetadata(customer)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.orderProcessing.service.Customer)
+                      - SQL table alias mapping - customer2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {custId1_2_2_}
+
+DEBUG main org.hibernate.loader.collection.plan.CollectionLoader - Static select for collection com.orderProcessing.service.Product.order: select order0_.productId as productId2_6_0_, order0_.id as id1_3_0_, customeror1_.id as id1_5_1_, customeror1_.orderDate as orderDate2_5_1_, customeror1_1_.custId as custId1_4_1_, customer2_.custId as custId1_2_2_, customer2_.contactNo as contactNo2_2_2_, customer2_.emailId as emailId3_2_2_, customer2_.name as name4_2_2_ from CustomerOrder_Product order0_ inner join customerorder customeror1_ on order0_.id=customeror1_.id left outer join CustomerOrder_customer customeror1_1_ on customeror1_.id=customeror1_1_.id left outer join Customer customer2_ on customeror1_1_.custId=customer2_.custId where order0_.productId=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@6f012914]
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@18fdb6cf]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : orderDate
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : customer
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(collection=com.orderProcessing.service.Customer.order)
+    - Returns
+       - CollectionReturnImpl(collection=com.orderProcessing.service.Customer.order, querySpaceUid=<gen:0>, path=[com.orderProcessing.service.Customer.order])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.orderProcessing.service.CustomerOrder, querySpaceUid=<gen:1>, path=[com.orderProcessing.service.Customer.order].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.orderProcessing.service.Customer.order)
+          - SQL table alias mapping - order0_
+          - alias suffix - 0_
+          - suffixed key columns - {custId1_2_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_5_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.orderProcessing.service.CustomerOrder)
+                - SQL table alias mapping - customeror1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_5_1_}
+
+DEBUG main org.hibernate.loader.collection.plan.CollectionLoader - Static select for collection com.orderProcessing.service.Customer.order: select order0_.custId as custId1_2_0_, order0_.id as id2_4_0_, customeror1_.id as id1_5_1_, customeror1_.orderDate as orderDate2_5_1_, customeror1_1_.custId as custId1_4_1_ from CustomerOrder_customer order0_ inner join customerorder customeror1_ on order0_.id=customeror1_.id left outer join CustomerOrder_customer customeror1_1_ on customeror1_.id=customeror1_1_.id where order0_.custId=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@61533ae]
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@732bb66d]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : city
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pincode
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : state
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : type
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(collection=com.orderProcessing.service.Customer.address)
+    - Returns
+       - CollectionReturnImpl(collection=com.orderProcessing.service.Customer.address, querySpaceUid=<gen:0>, path=[com.orderProcessing.service.Customer.address])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.orderProcessing.service.Address, querySpaceUid=<gen:1>, path=[com.orderProcessing.service.Customer.address].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.orderProcessing.service.Customer.address)
+          - SQL table alias mapping - address0_
+          - alias suffix - 0_
+          - suffixed key columns - {customer_custId6_2_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - addressId1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.orderProcessing.service.Address)
+                - SQL table alias mapping - address0_
+                - alias suffix - 1_
+                - suffixed key columns - {addressId1_0_1_}
+
+DEBUG main org.hibernate.loader.collection.plan.CollectionLoader - Static select for collection com.orderProcessing.service.Customer.address: select address0_.customer_custId as customer_custId6_2_0_, address0_.addressId as addressId1_0_0_, address0_.addressId as addressId1_0_1_, address0_.city as city2_0_1_, address0_.pincode as pincode3_0_1_, address0_.state as state4_0_1_, address0_.type as type5_0_1_ from Address address0_ where address0_.customer_custId=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@6ad5923a]
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4463d9d3]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : order
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productDescription
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productName
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(collection=com.orderProcessing.service.CustomerOrder.product)
+    - Returns
+       - CollectionReturnImpl(collection=com.orderProcessing.service.CustomerOrder.product, querySpaceUid=<gen:0>, path=[com.orderProcessing.service.CustomerOrder.product])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.orderProcessing.service.Product, querySpaceUid=<gen:1>, path=[com.orderProcessing.service.CustomerOrder.product].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.orderProcessing.service.CustomerOrder.product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_5_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - productId1_6_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.orderProcessing.service.Product)
+                - SQL table alias mapping - product1_
+                - alias suffix - 1_
+                - suffixed key columns - {productId1_6_1_}
+
+DEBUG main org.hibernate.loader.collection.plan.CollectionLoader - Static select for collection com.orderProcessing.service.CustomerOrder.product: select product0_.id as id1_5_0_, product0_.productId as productId2_3_0_, product1_.productId as productId1_6_1_, product1_.productCategory as productCategory2_6_1_, product1_.productDescription as productDescription3_6_1_, product1_.productName as productName4_6_1_ from CustomerOrder_Product product0_ inner join products product1_ on product0_.productId=product1_.productId where product0_.id=?
+DEBUG main org.hibernate.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@2d0bfb24
+DEBUG main org.hibernate.internal.SessionFactoryRegistry - Registering SessionFactory: 926ab06a-6a17-460f-b3cd-a5d09bdad9c7 (<unnamed>)
+DEBUG main org.hibernate.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+DEBUG main org.hibernate.internal.SessionFactoryImpl - Instantiated session factory
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+DEBUG main org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+DEBUG main org.hibernate.cfg.Configuration - Processing hbm.xml files
+DEBUG main org.hibernate.cfg.Configuration - Process annotated classes
+DEBUG main org.hibernate.cfg.Configuration - Processing fk mappings (*ToOne and JoinedSubclass)
+DEBUG main org.hibernate.cfg.Configuration - Processing extends queue
+DEBUG main org.hibernate.cfg.Configuration - Processing extends queue
+DEBUG main org.hibernate.cfg.Configuration - Processing collection mappings
+DEBUG main org.hibernate.cfg.Configuration - Processing native query and ResultSetMapping mappings
+DEBUG main org.hibernate.cfg.Configuration - Processing association property references
+DEBUG main org.hibernate.cfg.Configuration - Creating tables' unique integer identifiers
+DEBUG main org.hibernate.cfg.Configuration - Processing foreign key constraints
+DEBUG main org.hibernate.cfg.Configuration - Resolving reference to class: com.orderProcessing.service.Customer
+DEBUG main org.hibernate.cfg.Configuration - Resolving reference to class: com.orderProcessing.service.Customer
+DEBUG main org.hibernate.cfg.Configuration - Resolving reference to class: com.orderProcessing.service.Address
+DEBUG main org.hibernate.cfg.Configuration - Resolving reference to class: com.orderProcessing.service.Product
+DEBUG main org.hibernate.cfg.Configuration - Resolving reference to class: com.orderProcessing.service.CustomerOrder
+DEBUG main org.hibernate.cfg.Configuration - Resolving reference to class: com.orderProcessing.service.Customer
+DEBUG main org.hibernate.cfg.Configuration - Resolving reference to class: com.orderProcessing.service.CustomerOrder
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: SHREYAS.ADDRESS
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [pincode, customer_custid, city, state, type, addressid]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_eettond5fqfr7en5p2fl754i]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [sys_c006175]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: SHREYAS.ADDRESS_CUSTOMER
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [customer_custid, address_addressid]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_4catgxuoblcns08vtbbspnlxm, fk_9fkxst1wvtn90pq1ret2xulqy]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [sys_c006178, uk_4catgxuoblcns08vtbbspnlxm]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: SHREYAS.CUSTOMER
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [custid, name, emailid, contactno]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [sys_c006180]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: SHREYAS.CUSTOMERORDER_PRODUCT
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [productid, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_ojdol53p54qknefpoiq541vgv, fk_2l2e2e5u0qjqfmlev9vtn9sco]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [sys_c006183]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: SHREYAS.CUSTOMERORDER_CUSTOMER
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [custid, id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_monob0n8ue8uu3715tgc4v2tg, fk_j17pxqyg92mf02j5q8li2yurj]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [sys_c006185]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: SHREYAS.CUSTOMERORDER
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, orderdate]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [sys_c006187]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: SHREYAS.PRODUCTS
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [productid, productdescription, productcategory, productname]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [sys_c006189]
+DEBUG main org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.Oracle10gDialect]
+DEBUG main org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.Oracle10gDialect]
+DEBUG main org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.Oracle10gDialect]
+DEBUG main org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.Oracle10gDialect]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: SHREYAS.PK_TABLE
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [name, value]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: []
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+DEBUG main org.hibernate.internal.NamedQueryRepository - Checking 0 named HQL queries
+DEBUG main org.hibernate.internal.NamedQueryRepository - Checking 0 named SQL queries
+DEBUG main org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+DEBUG main org.hibernate.jpa.internal.schemagen.JpaSchemaGenerator - No actions specified; doing nothing
+DEBUG main org.hibernate.jpa.internal.EntityManagerFactoryRegistry - Initializing EntityManagerFactoryRegistry : org.hibernate.jpa.internal.EntityManagerFactoryRegistry@29f0c4f2
+DEBUG main org.hibernate.jpa.internal.EntityManagerFactoryRegistry - Registering EntityManagerFactory: testPU 
+INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'testPU'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@794cb805: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,entityManagerFactory,transactionManager,abstractGenericDao,addressDao,productDao,customerOrderDao,addressBO,productBO,customerOrderBO,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'dataSource'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'transactionManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'transactionManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'transactionManager'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'addressDao'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'addressDao'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [com.orderProcessing.service.dao.impl.AddressDAOImpl]: PersistenceElement for private javax.persistence.EntityManager com.orderProcessing.service.dao.impl.AbstractGenericDAOImpl.em
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'addressDao' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected element of bean 'addressDao': PersistenceElement for private javax.persistence.EntityManager com.orderProcessing.service.dao.impl.AbstractGenericDAOImpl.em
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG main org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'AddressDAOImpl.remove' with attribute: PROPAGATION_REQUIRED,ISOLATION_READ_COMMITTED; '',-java.lang.Exception
+DEBUG main org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator - Creating implicit proxy for bean 'addressDao' with 0 common interceptors and 1 specific interceptors
+DEBUG main org.springframework.aop.framework.JdkDynamicAopProxy - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.orderProcessing.service.dao.impl.AddressDAOImpl@9d200de]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'addressDao'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'productDao'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'productDao'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [com.orderProcessing.service.dao.impl.ProductDAOImpl]: PersistenceElement for private javax.persistence.EntityManager com.orderProcessing.service.dao.impl.AbstractGenericDAOImpl.em
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'productDao' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected element of bean 'productDao': PersistenceElement for private javax.persistence.EntityManager com.orderProcessing.service.dao.impl.AbstractGenericDAOImpl.em
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG main org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'ProductDAOImpl.remove' with attribute: PROPAGATION_REQUIRED,ISOLATION_READ_COMMITTED; '',-java.lang.Exception
+DEBUG main org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator - Creating implicit proxy for bean 'productDao' with 0 common interceptors and 1 specific interceptors
+DEBUG main org.springframework.aop.framework.JdkDynamicAopProxy - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.orderProcessing.service.dao.impl.ProductDAOImpl@795fd838]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'productDao'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'customerOrderDao'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'customerOrderDao'
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [com.orderProcessing.service.dao.impl.CustomerOrderDAOImpl]: PersistenceElement for private javax.persistence.EntityManager com.orderProcessing.service.dao.impl.AbstractGenericDAOImpl.em
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'customerOrderDao' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected element of bean 'customerOrderDao': PersistenceElement for private javax.persistence.EntityManager com.orderProcessing.service.dao.impl.AbstractGenericDAOImpl.em
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'entityManagerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG main org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'CustomerOrderDAOImpl.remove' with attribute: PROPAGATION_REQUIRED,ISOLATION_READ_COMMITTED; '',-java.lang.Exception
+DEBUG main org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator - Creating implicit proxy for bean 'customerOrderDao' with 0 common interceptors and 1 specific interceptors
+DEBUG main org.springframework.aop.framework.JdkDynamicAopProxy - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.orderProcessing.service.dao.impl.CustomerOrderDAOImpl@109d724c]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'customerOrderDao'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'addressBO'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'addressBO'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'addressBO' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'addressDao'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'addressBO'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'productBO'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'productBO'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'productBO' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'productDao'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'productBO'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'customerOrderBO'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'customerOrderBO'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'customerOrderBO' to allow for resolving potential circular references
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'customerOrderDao'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'customerOrderBO'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+DEBUG main org.springframework.context.support.GenericApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@3b0ee03a]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+DEBUG main org.springframework.core.env.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source
+DEBUG main org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Storing ApplicationContext in cache under key [[MergedContextConfiguration@ff5b51f testClass = AddressDAOTest, locations = '{classpath:spring/config/BeanLocations-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+DEBUG main org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@7abe27bf size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected element of bean 'com.orderProcessing.dao.test.AddressDAOTest': AutowiredFieldElement for protected com.orderProcessing.service.dao.AddressDAO com.orderProcessing.dao.test.TestBase.addressDAO
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'addressDao'
+DEBUG main org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'com.orderProcessing.dao.test.AddressDAOTest' to bean named 'addressDao'
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+DEBUG main org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'AddressDAOTest.canSaveAddress' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+DEBUG main org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator - Creating implicit proxy for bean 'com.orderProcessing.dao.test.AddressDAOTest' with 0 common interceptors and 1 specific interceptors
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.orderProcessing.dao.test.AddressDAOTest@78c03f1f]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Unable to apply any optimisations to advised method: public void com.orderProcessing.dao.test.AddressDAOTest.canSaveAddress()
+DEBUG main org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'AddressDAOTest.canGetAllAddress' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Unable to apply any optimisations to advised method: public void com.orderProcessing.dao.test.AddressDAOTest.canGetAllAddress()
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Unable to apply any optimisations to advised method: public void com.orderProcessing.dao.test.TestBase.setAddressDAO(com.orderProcessing.service.dao.AddressDAO)
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Unable to apply any optimisations to advised method: public com.orderProcessing.service.dao.AddressDAO com.orderProcessing.dao.test.TestBase.getAddressDAO()
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Unable to apply any optimisations to advised method: protected com.orderProcessing.service.Address com.orderProcessing.dao.test.TestBase.createAddressToPersist()
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Found 'hashCode' method: public native int java.lang.Object.hashCode()
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Unable to apply any optimisations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+DEBUG main org.springframework.aop.framework.CglibAopProxy - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+DEBUG main org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test method: context [DefaultTestContext@1ed4004b testClass = AddressDAOTest, testInstance = com.orderProcessing.dao.test.AddressDAOTest@78c03f1f, testMethod = canGetAllAddress@AddressDAOTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@ff5b51f testClass = AddressDAOTest, locations = '{classpath:spring/config/BeanLocations-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+DEBUG main org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'AddressDAOTest.canGetAllAddress' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+DEBUG main org.springframework.test.context.transaction.TransactionalTestExecutionListener - Explicit transaction definition [PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''] found for test context [DefaultTestContext@1ed4004b testClass = AddressDAOTest, testInstance = com.orderProcessing.dao.test.AddressDAOTest@78c03f1f, testMethod = canGetAllAddress@AddressDAOTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@ff5b51f testClass = AddressDAOTest, locations = '{classpath:spring/config/BeanLocations-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+DEBUG main org.springframework.test.context.transaction.TransactionalTestExecutionListener - Retrieved @TransactionConfiguration [null] for test class [com.orderProcessing.dao.test.AddressDAOTest].
+DEBUG main org.springframework.test.context.transaction.TransactionalTestExecutionListener - Using TransactionConfigurationAttributes [TransactionConfigurationAttributes@3fdecce transactionManagerName = '', defaultRollback = true] for test class [com.orderProcessing.dao.test.AddressDAOTest].
+DEBUG main org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@ff5b51f testClass = AddressDAOTest, locations = '{classpath:spring/config/BeanLocations-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+DEBUG main org.springframework.test.context.cache - Spring test ApplicationContext cache statistics: [DefaultContextCache@7abe27bf size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+DEBUG main org.springframework.test.context.transaction.TransactionalTestExecutionListener - Method-level @Rollback(true) overrides default rollback [true] for test context [DefaultTestContext@1ed4004b testClass = AddressDAOTest, testInstance = com.orderProcessing.dao.test.AddressDAOTest@78c03f1f, testMethod = canGetAllAddress@AddressDAOTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@ff5b51f testClass = AddressDAOTest, locations = '{classpath:spring/config/BeanLocations-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Creating new transaction with name [com.orderProcessing.dao.test.AddressDAOTest.canGetAllAddress]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Opened new EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@7ea08277] for JPA transaction
+DEBUG main org.hibernate.engine.transaction.spi.AbstractTransactionImpl - begin
+DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtaining JDBC connection
+DEBUG main org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:oracle:thin:@localhost:1521:xe]
+DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtained JDBC connection
+DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - initial autocommit status: true
+DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - disabling autocommit
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@64a4dd8d]
+INFO main org.springframework.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@1ed4004b testClass = AddressDAOTest, testInstance = com.orderProcessing.dao.test.AddressDAOTest@78c03f1f, testMethod = canGetAllAddress@AddressDAOTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@ff5b51f testClass = AddressDAOTest, locations = '{classpath:spring/config/BeanLocations-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@2b8bd14b]; rollback [true]
+DEBUG main org.hibernate.hql.internal.ast.QueryTranslatorImpl - parse() - HQL: SELECT p FROM com.orderProcessing.service.Address p
+DEBUG main org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'FROM'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[IDENT] Node: 'com'
+       |     |  |  |  \-[IDENT] Node: 'orderProcessing'
+       |     |  |  \-[IDENT] Node: 'service'
+       |     |  \-[IDENT] Node: 'Address'
+       |     \-[ALIAS] Node: 'p'
+       \-[SELECT] Node: 'SELECT'
+          \-[IDENT] Node: 'p'
+
+DEBUG main org.hibernate.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+DEBUG main org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+DEBUG main org.hibernate.hql.internal.ast.tree.FromElement - FromClause{level=1} : com.orderProcessing.service.Address (p) -> address0_
+DEBUG main org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : p -> address0_.addressId
+DEBUG main org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+DEBUG main org.hibernate.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} address0_.addressId ) ( FromClause{level=1} Address address0_ ) )
+DEBUG main org.hibernate.hql.internal.ast.util.JoinProcessor - Using FROM fragment [Address address0_]
+DEBUG main org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+DEBUG main org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Address)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'address0_.addressId as addressId1_0_' {alias=p, className=com.orderProcessing.service.Address, tableAlias=address0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'address0_.city as city2_0_, address0_.pincode as pincode3_0_, address0_.state as state4_0_, address0_.type as type5_0_'
+    \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[p], fromElementByTableAlias=[address0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'Address address0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=p,role=null,tableName=Address,tableAlias=address0_,origin=null,columns={,className=com.orderProcessing.service.Address}}
+
+DEBUG main org.hibernate.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+DEBUG main org.hibernate.hql.internal.ast.QueryTranslatorImpl - HQL: SELECT p FROM com.orderProcessing.service.Address p
+DEBUG main org.hibernate.hql.internal.ast.QueryTranslatorImpl - SQL: select address0_.addressId as addressId1_0_, address0_.city as city2_0_, address0_.pincode as pincode3_0_, address0_.state as state4_0_, address0_.type as type5_0_ from Address address0_
+DEBUG main org.hibernate.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+DEBUG main org.hibernate.SQL - select address0_.addressId as addressId1_0_, address0_.city as city2_0_, address0_.pincode as pincode3_0_, address0_.state as state4_0_, address0_.type as type5_0_ from Address address0_
+INFO main com.orderProcessing.dao.test.AddressDAOTest - *********Printing all Address : []
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Initiating transaction rollback
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Rolling back JPA transaction on EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@7ea08277]
+DEBUG main org.hibernate.engine.transaction.spi.AbstractTransactionImpl - rolling back
+DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - rolled JDBC Connection
+DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - re-enabling autocommit
+DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.jpa.internal.EntityManagerImpl@7ea08277] after transaction
+DEBUG main org.springframework.orm.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Releasing JDBC connection
+DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Released JDBC connection
+INFO main org.springframework.test.context.transaction.TransactionContext - Rolled back transaction for test context [DefaultTestContext@1ed4004b testClass = AddressDAOTest, testInstance = com.orderProcessing.dao.test.AddressDAOTest@78c03f1f, testMethod = canGetAllAddress@AddressDAOTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@ff5b51f testClass = AddressDAOTest, locations = '{classpath:spring/config/BeanLocations-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+DEBUG main org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@1ed4004b testClass = AddressDAOTest, testInstance = com.orderProcessing.dao.test.AddressDAOTest@78c03f1f, testMethod = canGetAllAddress@AddressDAOTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@ff5b51f testClass = AddressDAOTest, locations = '{classpath:spring/config/BeanLocations-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+DEBUG main org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@1ed4004b testClass = AddressDAOTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@ff5b51f testClass = AddressDAOTest, locations = '{classpath:spring/config/BeanLocations-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+INFO Thread-1 org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@610694f1: startup date [Sat Mar 31 14:06:54 IST 2018]; root of context hierarchy
+DEBUG Thread-1 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+DEBUG Thread-1 org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@794cb805: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,entityManagerFactory,transactionManager,abstractGenericDao,addressDao,productDao,customerOrderDao,addressBO,productBO,customerOrderBO,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+DEBUG Thread-1 org.springframework.beans.factory.support.DefaultListableBeanFactory - Retrieved dependent beans for bean 'entityManagerFactory': [transactionManager]
+DEBUG Thread-1 org.springframework.beans.factory.support.DisposableBeanAdapter - Invoking destroy() on bean with name 'entityManagerFactory'
+INFO Thread-1 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'testPU'
+DEBUG Thread-1 org.hibernate.internal.SessionFactoryImpl - HHH000031: Closing
+DEBUG Thread-1 org.hibernate.jpa.internal.EntityManagerFactoryRegistry - Remove: name=testPU
+DEBUG Thread-1 org.springframework.beans.factory.support.DefaultListableBeanFactory - Retrieved dependent beans for bean 'org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter#670002': [entityManagerFactory]

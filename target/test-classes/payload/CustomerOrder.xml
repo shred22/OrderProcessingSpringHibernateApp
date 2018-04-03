@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Document created with online XML Editor http://xmlgrid.net 2017/12/15 15:3:13  -->
+   <customerOrder>
+         <Customer>
+               <name>Shreyas Dange</name>
+
+               <productId>1</productId>
+               <contactNo>7845968774</contactNo>
+
+               <emailId>sd@gmal.com</emailId>
+               <address>
+                     <type>home</type>
+
+                     <street>loha</street>
+                     <city>Pune</city>
+
+                     <state>Mp</state>
+                     <pincode>785147</pincode>
+
+               </address>
+
+
+
+         </Customer>
+
+
+         <orderdate>17/02/2018</orderdate>
+
+         <expedite>Y</expedite>
+   </customerOrder>
+

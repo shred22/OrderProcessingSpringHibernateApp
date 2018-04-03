@@ -1,0 +1,770 @@
+DEBUG main org.hibernate.cfg.CollectionSecondPass - Mapped collection key: Address_addressId, element: customer_custId
+DEBUG main org.hibernate.cfg.CollectionSecondPass - Second pass for collection: com.orderProcessing.service.Product.order
+DEBUG main org.hibernate.cfg.annotations.CollectionBinder - Binding as ManyToMany: com.orderProcessing.service.Product.order
+DEBUG main org.hibernate.cfg.annotations.TableBinder - Retrieving property com.orderProcessing.service.CustomerOrder.product
+DEBUG main org.hibernate.cfg.CollectionSecondPass - Mapped collection key: productId, element: id
+DEBUG main org.hibernate.cfg.CollectionSecondPass - Second pass for collection: com.orderProcessing.service.Customer.address
+DEBUG main org.hibernate.cfg.annotations.CollectionBinder - Binding a OneToMany: com.orderProcessing.service.Customer.address through a foreign key
+DEBUG main org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: com.orderProcessing.service.Customer.address -> Address
+DEBUG main org.hibernate.cfg.annotations.TableBinder - Retrieving property com.orderProcessing.service.Address.customer
+DEBUG main org.hibernate.cfg.CollectionSecondPass - Mapped collection key: customer_custId, one-to-many: com.orderProcessing.service.Address
+DEBUG main org.hibernate.cfg.CollectionSecondPass - Second pass for collection: com.orderProcessing.service.Customer.order
+DEBUG main org.hibernate.cfg.annotations.CollectionBinder - Binding a OneToMany: com.orderProcessing.service.Customer.order through an association table
+DEBUG main org.hibernate.cfg.annotations.TableBinder - Retrieving property com.orderProcessing.service.CustomerOrder.customer
+DEBUG main org.hibernate.cfg.CollectionSecondPass - Mapped collection key: custId, element: id
+DEBUG main org.hibernate.cfg.Configuration - Processing native query and ResultSetMapping mappings
+DEBUG main org.hibernate.cfg.Configuration - Processing association property references
+DEBUG main org.hibernate.cfg.Configuration - Creating tables' unique integer identifiers
+DEBUG main org.hibernate.cfg.Configuration - Processing foreign key constraints
+DEBUG main org.hibernate.cfg.Configuration - Resolving reference to class: com.orderProcessing.service.Customer
+DEBUG main org.hibernate.cfg.Configuration - Resolving reference to class: com.orderProcessing.service.Customer
+DEBUG main org.hibernate.cfg.Configuration - Resolving reference to class: com.orderProcessing.service.Address
+DEBUG main org.hibernate.cfg.Configuration - Resolving reference to class: com.orderProcessing.service.Product
+DEBUG main org.hibernate.cfg.Configuration - Resolving reference to class: com.orderProcessing.service.CustomerOrder
+DEBUG main org.hibernate.cfg.Configuration - Resolving reference to class: com.orderProcessing.service.Customer
+DEBUG main org.hibernate.cfg.Configuration - Resolving reference to class: com.orderProcessing.service.CustomerOrder
+DEBUG main org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+DEBUG main org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+DEBUG main org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+DEBUG main org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+DEBUG main org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+DEBUG main org.hibernate.cfg.SettingsFactory - JDBC batch size: 15
+DEBUG main org.hibernate.cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
+DEBUG main org.hibernate.cfg.SettingsFactory - Scrollable result sets: enabled
+DEBUG main org.hibernate.cfg.SettingsFactory - Wrap result sets: disabled
+DEBUG main org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): disabled
+DEBUG main org.hibernate.cfg.SettingsFactory - multi-tenancy strategy : NONE
+DEBUG main org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+DEBUG main org.hibernate.cfg.SettingsFactory - Using BatchFetchStyle : LEGACY
+DEBUG main org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+DEBUG main org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+DEBUG main org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+DEBUG main org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+DEBUG main org.hibernate.cfg.SettingsFactory - Default null ordering: none
+DEBUG main org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+DEBUG main org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+DEBUG main org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: disabled
+DEBUG main org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+DEBUG main org.hibernate.cfg.SettingsFactory - Query cache: disabled
+DEBUG main org.hibernate.cache.internal.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+DEBUG main org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+DEBUG main org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+DEBUG main org.hibernate.cfg.SettingsFactory - Second-level cache direct-reference entries: disabled
+DEBUG main org.hibernate.cfg.SettingsFactory - Automatic eviction of collection cache: disabled
+DEBUG main org.hibernate.cfg.SettingsFactory - Statistics: disabled
+DEBUG main org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+DEBUG main org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+DEBUG main org.hibernate.cfg.SettingsFactory - Named query checking : enabled
+DEBUG main org.hibernate.cfg.SettingsFactory - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+DEBUG main org.hibernate.cfg.SettingsFactory - Allow initialization of lazy state outside session : : disabled
+DEBUG main org.hibernate.cfg.SettingsFactory - JTA Track by Thread: enabled
+DEBUG main org.hibernate.internal.SessionFactoryImpl - Building session factory
+DEBUG main org.hibernate.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+DEBUG main org.hibernate.internal.SessionFactoryImpl - Instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=C:\Java\jdk1.8.0_45\jre\bin, java.vm.version=25.45-b02, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=E:\ProgMaterial\GitLocalRepo\OrderProcessingApp, javax.persistence.sharedCache.mode=UNSPECIFIED, java.runtime.version=1.8.0_45-b15, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, java.endorsed.dirs=C:\Java\jdk1.8.0_45\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\admin\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 8.1, sun.jnu.encoding=Cp1252, java.library.path=C:\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Java/jdk1.8.0_45/bin/../jre/bin/server;C:/Java/jdk1.8.0_45/bin/../jre/bin;C:/Java/jdk1.8.0_45/bin/../jre/lib/amd64;C:\ProgramData\Oracle\Java\javapath;c:\windows\system32;C:\oracle10g\app\oracle\product\10.2.0\server\bin;C:\Java\jdk1.8.0_45;C:\Program Files\Java\jdk1.7.0_80;C:\apache-ant-1.9.6-bin\apache-ant-1.9.6/bin;C:\Python34;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\TortoiseSVN\bin;F:\Programming Material\apache-maven-3.3.3-bin\apache-maven-3.3.3\bin;C:\Program Files\Git\cmd;C:\Java\jdk1.8.0_45\bin;C:\Java\jdk1.8.0_45;;E:\ProgMaterial\DockerToolbox\Docker Toolbox;F:\Programming Material\JAVA material\eclipse;;., hibernate.ejb.persistenceUnitName=testPU, java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.3, user.home=C:\Users\admin, user.timezone=Asia/Calcutta, java.awt.printerjob=sun.awt.windows.WPrinterJob, java.specification.version=1.8, file.encoding=UTF-8, javax.persistence.nonJtaDataSource=org.springframework.jdbc.datasource.DriverManagerDataSource@1af2d44a, user.name=shreyas, java.class.path=E:\ProgMaterial\GitLocalRepo\OrderProcessingApp\target\test-classes;E:\ProgMaterial\GitLocalRepo\OrderProcessingApp\target\classes;E:\ProgMaterial\MavenLocalRepo\org\apache\cxf\cxf-rt-frontend-jaxws\3.2.1\cxf-rt-frontend-jaxws-3.2.1.jar;E:\ProgMaterial\MavenLocalRepo\xml-resolver\xml-resolver\1.2\xml-resolver-1.2.jar;E:\ProgMaterial\MavenLocalRepo\org\ow2\asm\asm\5.2\asm-5.2.jar;E:\ProgMaterial\MavenLocalRepo\org\apache\cxf\cxf-core\3.2.1\cxf-core-3.2.1.jar;E:\ProgMaterial\MavenLocalRepo\com\fasterxml\woodstox\woodstox-core\5.0.3\woodstox-core-5.0.3.jar;E:\ProgMaterial\MavenLocalRepo\org\codehaus\woodstox\stax2-api\3.1.4\stax2-api-3.1.4.jar;E:\ProgMaterial\MavenLocalRepo\org\apache\ws\xmlschema\xmlschema-core\2.2.2\xmlschema-core-2.2.2.jar;E:\ProgMaterial\MavenLocalRepo\org\apache\cxf\cxf-rt-bindings-soap\3.2.1\cxf-rt-bindings-soap-3.2.1.jar;E:\ProgMaterial\MavenLocalRepo\org\apache\cxf\cxf-rt-wsdl\3.2.1\cxf-rt-wsdl-3.2.1.jar;E:\ProgMaterial\MavenLocalRepo\wsdl4j\wsdl4j\1.6.3\wsdl4j-1.6.3.jar;E:\ProgMaterial\MavenLocalRepo\org\apache\cxf\cxf-rt-databinding-jaxb\3.2.1\cxf-rt-databinding-jaxb-3.2.1.jar;E:\ProgMaterial\MavenLocalRepo\org\apache\cxf\cxf-rt-bindings-xml\3.2.1\cxf-rt-bindings-xml-3.2.1.jar;E:\ProgMaterial\MavenLocalRepo\org\apache\cxf\cxf-rt-frontend-simple\3.2.1\cxf-rt-frontend-simple-3.2.1.jar;E:\ProgMaterial\MavenLocalRepo\org\apache\cxf\cxf-rt-ws-addr\3.2.1\cxf-rt-ws-addr-3.2.1.jar;E:\ProgMaterial\MavenLocalRepo\org\apache\cxf\cxf-rt-ws-policy\3.2.1\cxf-rt-ws-policy-3.2.1.jar;E:\ProgMaterial\MavenLocalRepo\org\apache\neethi\neethi\3.1.0\neethi-3.1.0.jar;E:\ProgMaterial\MavenLocalRepo\org\apache\cxf\cxf-rt-transports-http\3.2.1\cxf-rt-transports-http-3.2.1.jar;E:\ProgMaterial\MavenLocalRepo\junit\junit\4.12\junit-4.12.jar;E:\ProgMaterial\MavenLocalRepo\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;E:\ProgMaterial\MavenLocalRepo\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;E:\ProgMaterial\MavenLocalRepo\org\springframework\spring-core\4.3.1.RELEASE\spring-core-4.3.1.RELEASE.jar;E:\ProgMaterial\MavenLocalRepo\org\springframework\spring-context\4.3.1.RELEASE\spring-context-4.3.1.RELEASE.jar;E:\ProgMaterial\MavenLocalRepo\org\springframework\spring-beans\4.3.1.RELEASE\spring-beans-4.3.1.RELEASE.jar;E:\ProgMaterial\MavenLocalRepo\org\springframework\spring-expression\4.3.1.RELEASE\spring-expression-4.3.1.RELEASE.jar;E:\ProgMaterial\MavenLocalRepo\org\springframework\spring-jdbc\4.3.1.RELEASE\spring-jdbc-4.3.1.RELEASE.jar;E:\ProgMaterial\MavenLocalRepo\org\springframework\spring-tx\4.3.1.RELEASE\spring-tx-4.3.1.RELEASE.jar;E:\ProgMaterial\MavenLocalRepo\org\springframework\spring-orm\4.3.1.RELEASE\spring-orm-4.3.1.RELEASE.jar;E:\ProgMaterial\MavenLocalRepo\org\springframework\spring-aspects\4.3.1.RELEASE\spring-aspects-4.3.1.RELEASE.jar;E:\ProgMaterial\MavenLocalRepo\org\springframework\spring-aop\4.3.1.RELEASE\spring-aop-4.3.1.RELEASE.jar;E:\ProgMaterial\MavenLocalRepo\org\springframework\spring-test\4.3.1.RELEASE\spring-test-4.3.1.RELEASE.jar;E:\ProgMaterial\MavenLocalRepo\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;E:\ProgMaterial\MavenLocalRepo\org\aspectj\aspectjrt\1.8.13\aspectjrt-1.8.13.jar;E:\ProgMaterial\MavenLocalRepo\org\aspectj\aspectjweaver\1.8.13\aspectjweaver-1.8.13.jar;E:\ProgMaterial\MavenLocalRepo\org\springframework\spring-webmvc\4.3.1.RELEASE\spring-webmvc-4.3.1.RELEASE.jar;E:\ProgMaterial\MavenLocalRepo\org\springframework\spring-web\4.3.1.RELEASE\spring-web-4.3.1.RELEASE.jar;E:\ProgMaterial\MavenLocalRepo\org\apache\tomcat\tomcat-dbcp\7.0.55\tomcat-dbcp-7.0.55.jar;E:\ProgMaterial\MavenLocalRepo\org\hibernate\hibernate-core\4.3.1.Final\hibernate-core-4.3.1.Final.jar;E:\ProgMaterial\MavenLocalRepo\org\jboss\logging\jboss-logging\3.1.3.GA\jboss-logging-3.1.3.GA.jar;E:\ProgMaterial\MavenLocalRepo\org\jboss\logging\jboss-logging-annotations\1.2.0.Beta1\jboss-logging-annotations-1.2.0.Beta1.jar;E:\ProgMaterial\MavenLocalRepo\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.0.Final\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;E:\ProgMaterial\MavenLocalRepo\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;E:\ProgMaterial\MavenLocalRepo\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;E:\ProgMaterial\MavenLocalRepo\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;E:\ProgMaterial\MavenLocalRepo\org\jboss\jandex\1.1.0.Final\jandex-1.1.0.Final.jar;E:\ProgMaterial\MavenLocalRepo\org\hibernate\common\hibernate-commons-annotations\4.0.4.Final\hibernate-commons-annotations-4.0.4.Final.jar;E:\ProgMaterial\MavenLocalRepo\org\hibernate\hibernate-entitymanager\4.3.1.Final\hibernate-entitymanager-4.3.1.Final.jar;E:\ProgMaterial\MavenLocalRepo\org\hibernate\hibernate-ehcache\4.3.1.Final\hibernate-ehcache-4.3.1.Final.jar;E:\ProgMaterial\MavenLocalRepo\net\sf\ehcache\ehcache-core\2.4.3\ehcache-core-2.4.3.jar;E:\ProgMaterial\MavenLocalRepo\net\sf\ehcache\ehcache\2.10.3\ehcache-2.10.3.jar;E:\ProgMaterial\MavenLocalRepo\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;E:\ProgMaterial\MavenLocalRepo\antlr\antlr\2.7.7\antlr-2.7.7.jar;E:\ProgMaterial\MavenLocalRepo\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;E:\ProgMaterial\MavenLocalRepo\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar;E:\ProgMaterial\MavenLocalRepo\log4j\log4j\1.2.17\log4j-1.2.17.jar;E:\ProgMaterial\MavenLocalRepo\mysql\mysql-connector-java\5.1.12\mysql-connector-java-5.1.12.jar;E:\ProgMaterial\MavenLocalRepo\javassist\javassist\3.12.0.GA\javassist-3.12.0.GA.jar;E:\ProgMaterial\MavenLocalRepo\org\glassfish\jersey\containers\jersey-container-servlet-core\2.16\jersey-container-servlet-core-2.16.jar;E:\ProgMaterial\MavenLocalRepo\org\glassfish\hk2\external\javax.inject\2.4.0-b09\javax.inject-2.4.0-b09.jar;E:\ProgMaterial\MavenLocalRepo\org\glassfish\jersey\core\jersey-common\2.16\jersey-common-2.16.jar;E:\ProgMaterial\MavenLocalRepo\javax\annotation\javax.annotation-api\1.2\javax.annotation-api-1.2.jar;E:\ProgMaterial\MavenLocalRepo\org\glassfish\jersey\bundles\repackaged\jersey-guava\2.16\jersey-guava-2.16.jar;E:\ProgMaterial\MavenLocalRepo\org\glassfish\hk2\hk2-api\2.4.0-b09\hk2-api-2.4.0-b09.jar;E:\ProgMaterial\MavenLocalRepo\org\glassfish\hk2\hk2-utils\2.4.0-b09\hk2-utils-2.4.0-b09.jar;E:\ProgMaterial\MavenLocalRepo\org\glassfish\hk2\external\aopalliance-repackaged\2.4.0-b09\aopalliance-repackaged-2.4.0-b09.jar;E:\ProgMaterial\MavenLocalRepo\org\glassfish\hk2\hk2-locator\2.4.0-b09\hk2-locator-2.4.0-b09.jar;E:\ProgMaterial\MavenLocalRepo\org\glassfish\hk2\osgi-resource-locator\1.0.1\osgi-resource-locator-1.0.1.jar;E:\ProgMaterial\MavenLocalRepo\org\glassfish\jersey\core\jersey-server\2.16\jersey-server-2.16.jar;E:\ProgMaterial\MavenLocalRepo\org\glassfish\jersey\core\jersey-client\2.16\jersey-client-2.16.jar;E:\ProgMaterial\MavenLocalRepo\org\glassfish\jersey\media\jersey-media-jaxb\2.16\jersey-media-jaxb-2.16.jar;E:\ProgMaterial\MavenLocalRepo\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;E:\ProgMaterial\MavenLocalRepo\javax\ws\rs\javax.ws.rs-api\2.0.1\javax.ws.rs-api-2.0.1.jar;E:\ProgMaterial\MavenLocalRepo\javax\servlet\servlet-api\3.0-alpha-1\servlet-api-3.0-alpha-1.jar;E:\ProgMaterial\MavenLocalRepo\org\glassfish\jersey\media\jersey-media-moxy\2.16\jersey-media-moxy-2.16.jar;E:\ProgMaterial\MavenLocalRepo\org\glassfish\jersey\ext\jersey-entity-filtering\2.16\jersey-entity-filtering-2.16.jar;E:\ProgMaterial\MavenLocalRepo\org\eclipse\persistence\org.eclipse.persistence.moxy\2.5.0\org.eclipse.persistence.moxy-2.5.0.jar;E:\ProgMaterial\MavenLocalRepo\org\eclipse\persistence\org.eclipse.persistence.core\2.5.0\org.eclipse.persistence.core-2.5.0.jar;E:\ProgMaterial\MavenLocalRepo\org\eclipse\persistence\org.eclipse.persistence.asm\2.5.0\org.eclipse.persistence.asm-2.5.0.jar;E:\ProgMaterial\MavenLocalRepo\org\eclipse\persistence\org.eclipse.persistence.antlr\2.5.0\org.eclipse.persistence.antlr-2.5.0.jar;E:\ProgMaterial\MavenLocalRepo\javax\el\javax.el-api\2.2.4\javax.el-api-2.2.4.jar;E:\ProgMaterial\MavenLocalRepo\org\glassfish\web\javax.el\2.2.4\javax.el-2.2.4.jar;E:\ProgMaterial\MavenLocalRepo\com\oracle\ojdbc6\11.2.0\ojdbc6-11.2.0.jar;E:\ProgMaterial\MavenLocalRepo\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;E:\ProgMaterial\MavenLocalRepo\joda-time\joda-time\2.0\joda-time-2.0.jar;E:\ProgMaterial\MavenLocalRepo\org\jadira\usertype\usertype.core\3.0.0.CR1\usertype.core-3.0.0.CR1.jar;E:\ProgMaterial\MavenLocalRepo\org\joda\joda-money\0.6\joda-money-0.6.jar;E:\ProgMaterial\MavenLocalRepo\org\jadira\usertype\usertype.spi\3.0.0.CR1\usertype.spi-3.0.0.CR1.jar;/F:/Programming Material/JAVA material/eclipse/configuration/org.eclipse.osgi/390/0/.cp/;/F:/Programming Material/JAVA material/eclipse/configuration/org.eclipse.osgi/389/0/.cp/, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, javax.persistence.validation.mode=AUTO, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=C:\Java\jdk1.8.0_45\jre, sun.java.command=org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 55686 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -test com.orderProcessing.dao.test.AddressDAOTest:canGetAllAddress, java.specification.vendor=Oracle Corporation, user.language=en, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_45, java.ext.dirs=C:\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=C:\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Java\jdk1.8.0_45\jre\classes, java.vendor=Oracle Corporation, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, hibernate.hbm2ddl.auto=update, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=windows, sun.cpu.isalist=amd64}
+DEBUG main org.hibernate.cfg.beanvalidation.TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+DEBUG main org.hibernate.secure.spi.JaccIntegrator - Skipping JACC integration as it was not enabled
+DEBUG main org.hibernate.engine.spi.CascadeStyles - External cascade style regsitration [persist : STYLE_PERSIST_SKIPLAZY] overrode base registration [STYLE_PERSIST]
+DEBUG main org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.Oracle10gDialect]
+DEBUG main org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.Oracle10gDialect]
+DEBUG main org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.Oracle10gDialect]
+DEBUG main org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.Oracle10gDialect]
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister - Static SQL for collection: com.orderProcessing.service.Address.customer
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row insert: insert into Address_Customer (Address_addressId, customer_custId) values (?, ?)
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row update: update Address_Customer set customer_custId=? where Address_addressId=? and customer_custId=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row delete: delete from Address_Customer where Address_addressId=? and customer_custId=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  One-shot delete: delete from Address_Customer where Address_addressId=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister - Static SQL for collection: com.orderProcessing.service.Product.order
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row insert: insert into CustomerOrder_Product (productId, id) values (?, ?)
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row update: update CustomerOrder_Product set id=? where productId=? and id=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row delete: delete from CustomerOrder_Product where productId=? and id=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  One-shot delete: delete from CustomerOrder_Product where productId=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister - Static SQL for collection: com.orderProcessing.service.Customer.order
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row insert: insert into CustomerOrder_customer (custId, id) values (?, ?)
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row update: update CustomerOrder_customer set id=? where custId=? and id=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row delete: delete from CustomerOrder_customer where custId=? and id=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  One-shot delete: delete from CustomerOrder_customer where custId=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister - Static SQL for collection: com.orderProcessing.service.Customer.address
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row insert: update Address set customer_custId=? where addressId=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row update: update Address set  where addressId=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row delete: update Address set customer_custId=null where customer_custId=? and addressId=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  One-shot delete: update Address set customer_custId=null where customer_custId=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister - Static SQL for collection: com.orderProcessing.service.CustomerOrder.product
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row insert: insert into CustomerOrder_Product (id, productId) values (?, ?)
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row update: update CustomerOrder_Product set productId=? where id=? and productId=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  Row delete: delete from CustomerOrder_Product where id=? and productId=?
+DEBUG main org.hibernate.persister.collection.AbstractCollectionPersister -  One-shot delete: delete from CustomerOrder_Product where id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.orderProcessing.service.Address
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select addressId from Address where addressId =?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select address_.addressId, address_.city as city2_0_, address_.pincode as pincode3_0_, address_.state as state4_0_, address_.type as type5_0_ from Address address_ where address_.addressId=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into Address (city, pincode, state, type, addressId) values (?, ?, ?, ?, ?)
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update Address set city=?, pincode=?, state=?, type=? where addressId=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from Address where addressId=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7f9e1534]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : city
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pincode
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : state
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : type
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Address)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Address, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Address)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Address)
+          - SQL table alias mapping - address0_
+          - alias suffix - 0_
+          - suffixed key columns - {addressId1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Address [NONE]: select address0_.addressId as addressId1_0_0_, address0_.city as city2_0_0_, address0_.pincode as pincode3_0_0_, address0_.state as state4_0_0_, address0_.type as type5_0_0_ from Address address0_ where address0_.addressId=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4a1e3ac1]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : city
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pincode
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : state
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : type
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Address)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Address, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Address)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Address)
+          - SQL table alias mapping - address0_
+          - alias suffix - 0_
+          - suffixed key columns - {addressId1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Address [READ]: select address0_.addressId as addressId1_0_0_, address0_.city as city2_0_0_, address0_.pincode as pincode3_0_0_, address0_.state as state4_0_0_, address0_.type as type5_0_0_ from Address address0_ where address0_.addressId=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@56febdc]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : city
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pincode
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : state
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : type
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Address)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Address, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Address)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Address)
+          - SQL table alias mapping - address0_
+          - alias suffix - 0_
+          - suffixed key columns - {addressId1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Address [UPGRADE]: select address0_.addressId as addressId1_0_0_, address0_.city as city2_0_0_, address0_.pincode as pincode3_0_0_, address0_.state as state4_0_0_, address0_.type as type5_0_0_ from Address address0_ where address0_.addressId=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7d151a]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : city
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pincode
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : state
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : type
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Address)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Address, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Address)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Address)
+          - SQL table alias mapping - address0_
+          - alias suffix - 0_
+          - suffixed key columns - {addressId1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Address [UPGRADE_NOWAIT]: select address0_.addressId as addressId1_0_0_, address0_.city as city2_0_0_, address0_.pincode as pincode3_0_0_, address0_.state as state4_0_0_, address0_.type as type5_0_0_ from Address address0_ where address0_.addressId=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5300f14a]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : city
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pincode
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : state
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : type
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Address)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Address, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Address)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Address)
+          - SQL table alias mapping - address0_
+          - alias suffix - 0_
+          - suffixed key columns - {addressId1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Address [UPGRADE_SKIPLOCKED]: select address0_.addressId as addressId1_0_0_, address0_.city as city2_0_0_, address0_.pincode as pincode3_0_0_, address0_.state as state4_0_0_, address0_.type as type5_0_0_ from Address address0_ where address0_.addressId=? for update skip locked
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@77bb0ab5]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : city
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pincode
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : state
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : type
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Address)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Address, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Address)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Address)
+          - SQL table alias mapping - address0_
+          - alias suffix - 0_
+          - suffixed key columns - {addressId1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Address [FORCE]: select address0_.addressId as addressId1_0_0_, address0_.city as city2_0_0_, address0_.pincode as pincode3_0_0_, address0_.state as state4_0_0_, address0_.type as type5_0_0_ from Address address0_ where address0_.addressId=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@54acff7d]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : city
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pincode
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : state
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : type
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Address)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Address, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Address)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Address)
+          - SQL table alias mapping - address0_
+          - alias suffix - 0_
+          - suffixed key columns - {addressId1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Address [PESSIMISTIC_READ]: select address0_.addressId as addressId1_0_0_, address0_.city as city2_0_0_, address0_.pincode as pincode3_0_0_, address0_.state as state4_0_0_, address0_.type as type5_0_0_ from Address address0_ where address0_.addressId=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5488b5c5]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : city
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pincode
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : state
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : type
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Address)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Address, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Address)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Address)
+          - SQL table alias mapping - address0_
+          - alias suffix - 0_
+          - suffixed key columns - {addressId1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Address [PESSIMISTIC_WRITE]: select address0_.addressId as addressId1_0_0_, address0_.city as city2_0_0_, address0_.pincode as pincode3_0_0_, address0_.state as state4_0_0_, address0_.type as type5_0_0_ from Address address0_ where address0_.addressId=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@712ca57b]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : city
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pincode
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : state
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : type
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Address)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Address, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Address)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Address)
+          - SQL table alias mapping - address0_
+          - alias suffix - 0_
+          - suffixed key columns - {addressId1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Address [PESSIMISTIC_FORCE_INCREMENT]: select address0_.addressId as addressId1_0_0_, address0_.city as city2_0_0_, address0_.pincode as pincode3_0_0_, address0_.state as state4_0_0_, address0_.type as type5_0_0_ from Address address0_ where address0_.addressId=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@54534abf]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : city
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pincode
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : state
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : type
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Address)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Address, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Address)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Address)
+          - SQL table alias mapping - address0_
+          - alias suffix - 0_
+          - suffixed key columns - {addressId1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Address [OPTIMISTIC]: select address0_.addressId as addressId1_0_0_, address0_.city as city2_0_0_, address0_.pincode as pincode3_0_0_, address0_.state as state4_0_0_, address0_.type as type5_0_0_ from Address address0_ where address0_.addressId=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@45673f68]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : city
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : pincode
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : state
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : type
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Address)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Address, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Address)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Address)
+          - SQL table alias mapping - address0_
+          - alias suffix - 0_
+          - suffixed key columns - {addressId1_0_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Address [OPTIMISTIC_FORCE_INCREMENT]: select address0_.addressId as addressId1_0_0_, address0_.city as city2_0_0_, address0_.pincode as pincode3_0_0_, address0_.state as state4_0_0_, address0_.type as type5_0_0_ from Address address0_ where address0_.addressId=?
+DEBUG main org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.orderProcessing.service.Address: select address0_.addressId as addressId1_0_1_, address0_.city as city2_0_1_, address0_.pincode as pincode3_0_1_, address0_.state as state4_0_1_, address0_.type as type5_0_1_, customer1_.Address_addressId as Address_addressId1_0_3_, customer2_.custId as customer_custId2_1_3_, customer2_.custId as custId1_2_0_, customer2_.contactNo as contactNo2_2_0_, customer2_.emailId as emailId3_2_0_, customer2_.name as name4_2_0_ from Address address0_ left outer join Address_Customer customer1_ on address0_.addressId=customer1_.Address_addressId left outer join Customer customer2_ on customer1_.customer_custId=customer2_.custId where address0_.addressId=?
+DEBUG main org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.orderProcessing.service.Address: select address0_.addressId as addressId1_0_1_, address0_.city as city2_0_1_, address0_.pincode as pincode3_0_1_, address0_.state as state4_0_1_, address0_.type as type5_0_1_, customer1_.Address_addressId as Address_addressId1_0_3_, customer2_.custId as customer_custId2_1_3_, customer2_.custId as custId1_2_0_, customer2_.contactNo as contactNo2_2_0_, customer2_.emailId as emailId3_2_0_, customer2_.name as name4_2_0_ from Address address0_ left outer join Address_Customer customer1_ on address0_.addressId=customer1_.Address_addressId left outer join Customer customer2_ on customer1_.customer_custId=customer2_.custId where address0_.addressId=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.orderProcessing.service.CustomerOrder
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from customerorder where id =?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select customeror_.id, customeror_.orderDate as orderDate2_5_, customeror_1_.custId as custId1_4_ from customerorder customeror_ left outer join CustomerOrder_customer customeror_1_ on customeror_.id=customeror_1_.id where customeror_.id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into customerorder (orderDate, id) values (?, ?)
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update customerorder set orderDate=? where id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from customerorder where id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Insert 1: insert into CustomerOrder_customer (custId, id) values (?, ?)
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Update 1: update CustomerOrder_customer set custId=? where id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Delete 1: delete from CustomerOrder_customer where id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@17d238b1]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : orderDate
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4a183d02]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer.address
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer.contactNo
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer.emailId
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer.name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer.order
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : customer.order
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.CustomerOrder)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.CustomerOrder, querySpaceUid=<gen:0>, path=com.orderProcessing.service.CustomerOrder)
+          - EntityAttributeFetchImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:1>, path=com.orderProcessing.service.CustomerOrder.customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.CustomerOrder)
+          - SQL table alias mapping - customeror0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_5_0_}
+          - JOIN (JoinDefinedByMetadata(customer)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.orderProcessing.service.Customer)
+                - SQL table alias mapping - customer1_
+                - alias suffix - 1_
+                - suffixed key columns - {custId1_2_1_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.CustomerOrder [NONE]: select customeror0_.id as id1_5_0_, customeror0_.orderDate as orderDate2_5_0_, customeror0_1_.custId as custId1_4_0_, customer1_.custId as custId1_2_1_, customer1_.contactNo as contactNo2_2_1_, customer1_.emailId as emailId3_2_1_, customer1_.name as name4_2_1_ from customerorder customeror0_ left outer join CustomerOrder_customer customeror0_1_ on customeror0_.id=customeror0_1_.id left outer join Customer customer1_ on customeror0_1_.custId=customer1_.custId where customeror0_.id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@23cd4ff2]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : orderDate
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7e97551f]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer.address
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer.contactNo
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer.emailId
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer.name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer.order
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : customer.order
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.CustomerOrder)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.CustomerOrder, querySpaceUid=<gen:0>, path=com.orderProcessing.service.CustomerOrder)
+          - EntityAttributeFetchImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:1>, path=com.orderProcessing.service.CustomerOrder.customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.CustomerOrder)
+          - SQL table alias mapping - customeror0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_5_0_}
+          - JOIN (JoinDefinedByMetadata(customer)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.orderProcessing.service.Customer)
+                - SQL table alias mapping - customer1_
+                - alias suffix - 1_
+                - suffixed key columns - {custId1_2_1_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.CustomerOrder [READ]: select customeror0_.id as id1_5_0_, customeror0_.orderDate as orderDate2_5_0_, customeror0_1_.custId as custId1_4_0_, customer1_.custId as custId1_2_1_, customer1_.contactNo as contactNo2_2_1_, customer1_.emailId as emailId3_2_1_, customer1_.name as name4_2_1_ from customerorder customeror0_ left outer join CustomerOrder_customer customeror0_1_ on customeror0_.id=customeror0_1_.id left outer join Customer customer1_ on customeror0_1_.custId=customer1_.custId where customeror0_.id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@9f6e406]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : orderDate
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3e6f3bae]
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.CustomerOrder)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.CustomerOrder, querySpaceUid=<gen:0>, path=com.orderProcessing.service.CustomerOrder)
+          - EntityAttributeFetchImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:1>, path=com.orderProcessing.service.CustomerOrder.customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.CustomerOrder)
+          - SQL table alias mapping - customeror0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_5_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.CustomerOrder [UPGRADE]: select customeror0_.id as id1_5_0_, customeror0_.orderDate as orderDate2_5_0_, customeror0_1_.custId as custId1_4_0_ from customerorder customeror0_ left outer join CustomerOrder_customer customeror0_1_ on customeror0_.id=customeror0_1_.id where customeror0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@12477988]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : orderDate
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@73d69c0f]
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.CustomerOrder)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.CustomerOrder, querySpaceUid=<gen:0>, path=com.orderProcessing.service.CustomerOrder)
+          - EntityAttributeFetchImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:1>, path=com.orderProcessing.service.CustomerOrder.customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.CustomerOrder)
+          - SQL table alias mapping - customeror0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_5_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.CustomerOrder [UPGRADE_NOWAIT]: select customeror0_.id as id1_5_0_, customeror0_.orderDate as orderDate2_5_0_, customeror0_1_.custId as custId1_4_0_ from customerorder customeror0_ left outer join CustomerOrder_customer customeror0_1_ on customeror0_.id=customeror0_1_.id where customeror0_.id=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@34237b90]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : orderDate
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4a31c2ee]
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.CustomerOrder)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.CustomerOrder, querySpaceUid=<gen:0>, path=com.orderProcessing.service.CustomerOrder)
+          - EntityAttributeFetchImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:1>, path=com.orderProcessing.service.CustomerOrder.customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.CustomerOrder)
+          - SQL table alias mapping - customeror0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_5_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.CustomerOrder [UPGRADE_SKIPLOCKED]: select customeror0_.id as id1_5_0_, customeror0_.orderDate as orderDate2_5_0_, customeror0_1_.custId as custId1_4_0_ from customerorder customeror0_ left outer join CustomerOrder_customer customeror0_1_ on customeror0_.id=customeror0_1_.id where customeror0_.id=? for update skip locked
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@22101c80]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : orderDate
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@759d81f3]
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.CustomerOrder)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.CustomerOrder, querySpaceUid=<gen:0>, path=com.orderProcessing.service.CustomerOrder)
+          - EntityAttributeFetchImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:1>, path=com.orderProcessing.service.CustomerOrder.customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.CustomerOrder)
+          - SQL table alias mapping - customeror0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_5_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.CustomerOrder [FORCE]: select customeror0_.id as id1_5_0_, customeror0_.orderDate as orderDate2_5_0_, customeror0_1_.custId as custId1_4_0_ from customerorder customeror0_ left outer join CustomerOrder_customer customeror0_1_ on customeror0_.id=customeror0_1_.id where customeror0_.id=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@781a9412]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : orderDate
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@13e698c7]
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.CustomerOrder)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.CustomerOrder, querySpaceUid=<gen:0>, path=com.orderProcessing.service.CustomerOrder)
+          - EntityAttributeFetchImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:1>, path=com.orderProcessing.service.CustomerOrder.customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.CustomerOrder)
+          - SQL table alias mapping - customeror0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_5_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.CustomerOrder [PESSIMISTIC_READ]: select customeror0_.id as id1_5_0_, customeror0_.orderDate as orderDate2_5_0_, customeror0_1_.custId as custId1_4_0_ from customerorder customeror0_ left outer join CustomerOrder_customer customeror0_1_ on customeror0_.id=customeror0_1_.id where customeror0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@aed0151]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : orderDate
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1f12e153]
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.CustomerOrder)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.CustomerOrder, querySpaceUid=<gen:0>, path=com.orderProcessing.service.CustomerOrder)
+          - EntityAttributeFetchImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:1>, path=com.orderProcessing.service.CustomerOrder.customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.CustomerOrder)
+          - SQL table alias mapping - customeror0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_5_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.CustomerOrder [PESSIMISTIC_WRITE]: select customeror0_.id as id1_5_0_, customeror0_.orderDate as orderDate2_5_0_, customeror0_1_.custId as custId1_4_0_ from customerorder customeror0_ left outer join CustomerOrder_customer customeror0_1_ on customeror0_.id=customeror0_1_.id where customeror0_.id=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@389562d6]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : orderDate
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2160e52a]
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.CustomerOrder)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.CustomerOrder, querySpaceUid=<gen:0>, path=com.orderProcessing.service.CustomerOrder)
+          - EntityAttributeFetchImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:1>, path=com.orderProcessing.service.CustomerOrder.customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.CustomerOrder)
+          - SQL table alias mapping - customeror0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_5_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.CustomerOrder [PESSIMISTIC_FORCE_INCREMENT]: select customeror0_.id as id1_5_0_, customeror0_.orderDate as orderDate2_5_0_, customeror0_1_.custId as custId1_4_0_ from customerorder customeror0_ left outer join CustomerOrder_customer customeror0_1_ on customeror0_.id=customeror0_1_.id where customeror0_.id=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@29f0802c]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : orderDate
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@60f2e0bd]
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.CustomerOrder)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.CustomerOrder, querySpaceUid=<gen:0>, path=com.orderProcessing.service.CustomerOrder)
+          - EntityAttributeFetchImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:1>, path=com.orderProcessing.service.CustomerOrder.customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.CustomerOrder)
+          - SQL table alias mapping - customeror0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_5_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.CustomerOrder [OPTIMISTIC]: select customeror0_.id as id1_5_0_, customeror0_.orderDate as orderDate2_5_0_, customeror0_1_.custId as custId1_4_0_ from customerorder customeror0_ left outer join CustomerOrder_customer customeror0_1_ on customeror0_.id=customeror0_1_.id where customeror0_.id=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@469d003c]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : orderDate
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : product
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : customer
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@57bd2029]
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.CustomerOrder)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.CustomerOrder, querySpaceUid=<gen:0>, path=com.orderProcessing.service.CustomerOrder)
+          - EntityAttributeFetchImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:1>, path=com.orderProcessing.service.CustomerOrder.customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.CustomerOrder)
+          - SQL table alias mapping - customeror0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_5_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.CustomerOrder [OPTIMISTIC_FORCE_INCREMENT]: select customeror0_.id as id1_5_0_, customeror0_.orderDate as orderDate2_5_0_, customeror0_1_.custId as custId1_4_0_ from customerorder customeror0_ left outer join CustomerOrder_customer customeror0_1_ on customeror0_.id=customeror0_1_.id where customeror0_.id=?
+DEBUG main org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.orderProcessing.service.CustomerOrder: select customeror0_.id as id1_5_2_, customeror0_.orderDate as orderDate2_5_2_, customeror0_1_.custId as custId1_4_2_, product1_.id as id1_5_4_, product2_.productId as productId2_3_4_, product2_.productId as productId1_6_0_, product2_.productCategory as productCategory2_6_0_, product2_.productDescription as productDescription3_6_0_, product2_.productName as productName4_6_0_, customer3_.custId as custId1_2_1_, customer3_.contactNo as contactNo2_2_1_, customer3_.emailId as emailId3_2_1_, customer3_.name as name4_2_1_ from customerorder customeror0_ left outer join CustomerOrder_customer customeror0_1_ on customeror0_.id=customeror0_1_.id left outer join CustomerOrder_Product product1_ on customeror0_.id=product1_.id left outer join products product2_ on product1_.productId=product2_.productId left outer join Customer customer3_ on customeror0_1_.custId=customer3_.custId where customeror0_.id=?
+DEBUG main org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.orderProcessing.service.CustomerOrder: select customeror0_.id as id1_5_2_, customeror0_.orderDate as orderDate2_5_2_, customeror0_1_.custId as custId1_4_2_, product1_.id as id1_5_4_, product2_.productId as productId2_3_4_, product2_.productId as productId1_6_0_, product2_.productCategory as productCategory2_6_0_, product2_.productDescription as productDescription3_6_0_, product2_.productName as productName4_6_0_, customer3_.custId as custId1_2_1_, customer3_.contactNo as contactNo2_2_1_, customer3_.emailId as emailId3_2_1_, customer3_.name as name4_2_1_ from customerorder customeror0_ left outer join CustomerOrder_customer customeror0_1_ on customeror0_.id=customeror0_1_.id left outer join CustomerOrder_Product product1_ on customeror0_.id=product1_.id left outer join products product2_ on product1_.productId=product2_.productId left outer join Customer customer3_ on customeror0_1_.custId=customer3_.custId where customeror0_.id=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.orderProcessing.service.Product
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select productId from products where productId =?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select product_.productId, product_.productCategory as productCategory2_6_, product_.productDescription as productDescription3_6_, product_.productName as productName4_6_ from products product_ where product_.productId=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into products (productCategory, productDescription, productName, productId) values (?, ?, ?, ?)
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update products set productCategory=?, productDescription=?, productName=? where productId=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from products where productId=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@203dd56b]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productDescription
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productName
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Product, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {productId1_6_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Product [NONE]: select product0_.productId as productId1_6_0_, product0_.productCategory as productCategory2_6_0_, product0_.productDescription as productDescription3_6_0_, product0_.productName as productName4_6_0_ from products product0_ where product0_.productId=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6d64b553]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productDescription
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productName
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Product, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {productId1_6_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Product [READ]: select product0_.productId as productId1_6_0_, product0_.productCategory as productCategory2_6_0_, product0_.productDescription as productDescription3_6_0_, product0_.productName as productName4_6_0_ from products product0_ where product0_.productId=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1d3e6d34]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productDescription
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productName
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Product, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {productId1_6_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Product [UPGRADE]: select product0_.productId as productId1_6_0_, product0_.productCategory as productCategory2_6_0_, product0_.productDescription as productDescription3_6_0_, product0_.productName as productName4_6_0_ from products product0_ where product0_.productId=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@26a94fa5]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productDescription
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productName
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Product, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {productId1_6_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Product [UPGRADE_NOWAIT]: select product0_.productId as productId1_6_0_, product0_.productCategory as productCategory2_6_0_, product0_.productDescription as productDescription3_6_0_, product0_.productName as productName4_6_0_ from products product0_ where product0_.productId=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2873d672]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productDescription
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productName
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Product, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {productId1_6_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Product [UPGRADE_SKIPLOCKED]: select product0_.productId as productId1_6_0_, product0_.productCategory as productCategory2_6_0_, product0_.productDescription as productDescription3_6_0_, product0_.productName as productName4_6_0_ from products product0_ where product0_.productId=? for update skip locked
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@577f9109]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productDescription
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productName
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Product, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {productId1_6_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Product [FORCE]: select product0_.productId as productId1_6_0_, product0_.productCategory as productCategory2_6_0_, product0_.productDescription as productDescription3_6_0_, product0_.productName as productName4_6_0_ from products product0_ where product0_.productId=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@757529a4]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productDescription
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productName
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Product, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {productId1_6_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Product [PESSIMISTIC_READ]: select product0_.productId as productId1_6_0_, product0_.productCategory as productCategory2_6_0_, product0_.productDescription as productDescription3_6_0_, product0_.productName as productName4_6_0_ from products product0_ where product0_.productId=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5c41d037]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productDescription
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productName
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Product, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {productId1_6_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Product [PESSIMISTIC_WRITE]: select product0_.productId as productId1_6_0_, product0_.productCategory as productCategory2_6_0_, product0_.productDescription as productDescription3_6_0_, product0_.productName as productName4_6_0_ from products product0_ where product0_.productId=? for update
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5ec77191]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productDescription
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productName
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Product, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {productId1_6_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Product [PESSIMISTIC_FORCE_INCREMENT]: select product0_.productId as productId1_6_0_, product0_.productCategory as productCategory2_6_0_, product0_.productDescription as productDescription3_6_0_, product0_.productName as productName4_6_0_ from products product0_ where product0_.productId=? for update nowait
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1450078a]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productDescription
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productName
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Product, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {productId1_6_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Product [OPTIMISTIC]: select product0_.productId as productId1_6_0_, product0_.productCategory as productCategory2_6_0_, product0_.productDescription as productDescription3_6_0_, product0_.productName as productName4_6_0_ from products product0_ where product0_.productId=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@69c6161d]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productCategory
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productDescription
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : productName
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Product)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Product, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Product)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Product)
+          - SQL table alias mapping - product0_
+          - alias suffix - 0_
+          - suffixed key columns - {productId1_6_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Product [OPTIMISTIC_FORCE_INCREMENT]: select product0_.productId as productId1_6_0_, product0_.productCategory as productCategory2_6_0_, product0_.productDescription as productDescription3_6_0_, product0_.productName as productName4_6_0_ from products product0_ where product0_.productId=?
+DEBUG main org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.orderProcessing.service.Product: select product0_.productId as productId1_6_2_, product0_.productCategory as productCategory2_6_2_, product0_.productDescription as productDescription3_6_2_, product0_.productName as productName4_6_2_, order1_.productId as productId2_6_4_, customeror2_.id as id1_3_4_, customeror2_.id as id1_5_0_, customeror2_.orderDate as orderDate2_5_0_, customeror2_1_.custId as custId1_4_0_, customer3_.custId as custId1_2_1_, customer3_.contactNo as contactNo2_2_1_, customer3_.emailId as emailId3_2_1_, customer3_.name as name4_2_1_ from products product0_ left outer join CustomerOrder_Product order1_ on product0_.productId=order1_.productId left outer join customerorder customeror2_ on order1_.id=customeror2_.id left outer join CustomerOrder_customer customeror2_1_ on customeror2_.id=customeror2_1_.id left outer join Customer customer3_ on customeror2_1_.custId=customer3_.custId where product0_.productId=?
+DEBUG main org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.orderProcessing.service.Product: select product0_.productId as productId1_6_2_, product0_.productCategory as productCategory2_6_2_, product0_.productDescription as productDescription3_6_2_, product0_.productName as productName4_6_2_, order1_.productId as productId2_6_4_, customeror2_.id as id1_3_4_, customeror2_.id as id1_5_0_, customeror2_.orderDate as orderDate2_5_0_, customeror2_1_.custId as custId1_4_0_, customer3_.custId as custId1_2_1_, customer3_.contactNo as contactNo2_2_1_, customer3_.emailId as emailId3_2_1_, customer3_.name as name4_2_1_ from products product0_ left outer join CustomerOrder_Product order1_ on product0_.productId=order1_.productId left outer join customerorder customeror2_ on order1_.id=customeror2_.id left outer join CustomerOrder_customer customeror2_1_ on customeror2_.id=customeror2_1_.id left outer join Customer customer3_ on customeror2_1_.custId=customer3_.custId where product0_.productId=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.orderProcessing.service.Customer
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select custId from Customer where custId =?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select customer_.custId, customer_.contactNo as contactNo2_2_, customer_.emailId as emailId3_2_, customer_.name as name4_2_ from Customer customer_ where customer_.custId=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into Customer (contactNo, emailId, name, custId) values (?, ?, ?, ?)
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update Customer set contactNo=?, emailId=?, name=? where custId=?
+DEBUG main org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from Customer where custId=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2e1792e7]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : contactNo
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : emailId
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {custId1_2_0_}
+
+DEBUG main org.hibernate.loader.entity.plan.EntityLoader - Static select for entity com.orderProcessing.service.Customer [NONE]: select customer0_.custId as custId1_2_0_, customer0_.contactNo as contactNo2_2_0_, customer0_.emailId as emailId3_2_0_, customer0_.name as name4_2_0_ from Customer customer0_ where customer0_.custId=?
+DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3eb631b8]
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : address
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : contactNo
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : emailId
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : order
+DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=com.orderProcessing.service.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.orderProcessing.service.Customer, querySpaceUid=<gen:0>, path=com.orderProcessing.service.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.orderProcessing.service.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {custId1_2_0_}
+
