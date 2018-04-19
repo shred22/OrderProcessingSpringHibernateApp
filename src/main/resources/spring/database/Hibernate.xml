@@ -22,8 +22,26 @@
 		<property name="persistenceUnitName" value="testPU" />
 	</bean>
 
-	<!-- Transactions -->
+	<!-- Transactions 
 	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
 		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean>-->
+	
+	
+	<!-- Transactions -->
+	<bean id="AtomikosTransactionManager" class="com.atomikos.icatch.jta.UserTransactionManager">
+		<property name="forceShutdown" value="false" />
+	</bean>
+	
+	<bean id="AtomikosUserTransaction" class="com.atomikos.icatch.jta.UserTransactionImp">
+		<property name="transactionTimeout" value="300" />
+	</bean>
+	
+	<bean id="transactionManager" class="org.springframework.transaction.jta.JtaTransactionManager">
+		
+		<property name="transactionManager" ref="AtomikosTransactionManager"/>
+		<property name="userTransaction" ref="AtomikosUserTransaction"/>
+		 <property name="allowCustomIsolationLevels">
+    <value>true</value></property>
 	</bean>
 </beans>
